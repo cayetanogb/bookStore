@@ -14,7 +14,7 @@
         <li class="media mb-2 p-1" style="cursor: pointer;"
           *ngFor="let book of bookList"
           (click)="setSelectedBook(book)">
-          <img [src]="pathImg + book.coverImage" [style.width.px]="64" class="me-3" alt="">
+          <img [src]="configServe.pathImg + book.coverImage" [style.width.px]="64" class="me-3" alt="">
           <div class="media-body">
             <h6 class="mt-0 mb-1">{{ book.title }}</h6>
             <p>{{ book.authors }}</p>
